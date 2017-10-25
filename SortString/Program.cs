@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SortString
 {
@@ -10,6 +6,11 @@ namespace SortString
     {
         static void Main(string[] args)
         {
+            string doctorQuote = "There is no point in growing up if you can't be childish sometimes.";
+            string[] words = doctorQuote.Split(' ');
+            Array.Sort(words);
+            string sortedQuote = string.Join(" ", words);
+            Console.WriteLine(sortedQuote);
         }
     }
 }
